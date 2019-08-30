@@ -39,7 +39,7 @@ var urlicon = "";
 //Main function
 function urlfun() {
   //Defining URL by using input for the connection to the API at openweather.org
-  var url = `http://api.openweathermap.org/data/2.5/weather?q=${
+  var url = `https://api.openweathermap.org/data/2.5/weather?q=${
     document.getElementById("input").value
   }&APPID=620ee7c91e8d3031b33179f3c9474605&units=metric`;
   execute(url);
