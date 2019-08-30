@@ -1,4 +1,4 @@
-Hello!!
+## Hello!!
 Weather App works with api provided by openweather.org. By using this app you can see the weather conditions and 
 local time all around the world. 
 Distance local time is calculated through using time zone difference between distance and user's time zone.
