@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bootstrap</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lexend+Tera&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/685fc27e73.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="nav" class="navbar navbar-light">
+      <a class="navbar-brand">My City Weather</a>
+      <div id="time" class="mr-sm-2 text-light text-right">
+        Time
+      </div>
+    </nav>
+    <!-- Container -->
+    <div class="container-fluid">
+      <div id="box" class="row justify-content-center">
+        <div class="row pb-3 border-bottom">
+          <!-- Section-1 -->
+          <div class="col-md-12">
+            <p
+              style="font-family: 'Lexend Tera', sans-serif; font-size: 2rem"
+              class="ml-4"
+            >
+              Weather
+            </p>
+            <input
+              class="col-md-8 mb-1"
+              id="input"
+              type="text"
+              placeholder="City name..."
+              style="width: 60%; border-radius: 10px; font-size: 1rem;"
+            />
+            <button
+              id="btn"
+              class=" btn btn-primary col-md-4"
+              style="width: 80px"
+            >
+              Find
+            </button>
+          </div>
+        </div>
+        <!-- Section-2 -->
+        <div id="warning"></div>
+        <div class="row col-12 align-items-center border-bottom p-3">
+          <div
+            class="col-6 d-flex flex-column justify-content-center align-items-center p-0"
+          >
+            <div class="col-6 inforow" id="city"></div>
+            <div class="col-6 inforow" id="citytime"></div>
+          </div>
+          <div class="col-6 text-center inforow" id="degree"></div>
+        </div>
+        <!-- Section-3 -->
+        <div
+          class="row col-12 text-center mt-3 justify-content-center"
+          id="infoBox"
+        >
+        <table style="width: 100%">
+          <tr>
+            <td id="windWord"></td>
+            <td id="humidityWord"></td>
+            <td id="situation"></td>
+          </tr>
+          <tr >
+            <td class="inforow" id="wind"></td>
+            <td class="inforow" id="humidity"></td>
+            <td id="situationWord"></td>
+          </tr>
+        </table>
+          <!-- <div class="d-flex col-12 justify-content-between align-items-center">
+            <div ></div>
+            <div ></div>
+            <div></div>
+          </div>
+          <div class="d-flex col-12 justify-content-between align-items-center">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js" async defer></script>
+  </body>
+</html>

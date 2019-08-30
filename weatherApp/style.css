@@ -1,0 +1,72 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("back.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Lexend Tera", sans-serif;
+}
+.navbar {
+  background: #3e324a;
+  width: 100%;
+  opacity: 0.8;
+  font-size: 1.2rem;
+  height: 80px;
+  font-weight: bold;
+  box-shadow: -5px 5px 8px white;
+  color: white;
+}
+@media only screen and (max-width: 350px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+nav a {
+  font-family: "Lexend Tera", sans-serif;
+}
+nav div {
+  font-family: "Lexend Tera", sans-serif;
+}
+#box {
+  width: 25rem;
+  border: 3px solid white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: -8px 8px 3px #3e324a;
+  padding: 20px;
+  font-size: 1rem;
+  position: relative;
+  color: white;
+  margin: 15vh auto;
+}
+#box::after {
+  content: "";
+  background-image: url(box_back.jpg);
+  background-position: center;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+input {
+  outline: none;
+}
+#situationWord img {
+  width: 80%;
+}
+td {
+  width: 33%;
+  justify-content: space-between;
+}
+.inforow {
+  font-size: 1.6rem;
+}
